@@ -3,7 +3,7 @@ userid=$1
 if [ "$userid" -ne 0 ]; then
     echo "You are not a root user"
     exit 1
-
+fi
 echo "installing nginx"
 dnf install nginx -y
 if [ $? -ne 0 ]; then
