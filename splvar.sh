@@ -10,5 +10,5 @@ echo "home directory is: $HOME"
 echo "pid of current script: $$"
 slepp 100 &
 echo "pid of last background process: $!"
-echo "all args as a single string: $*"
+echo "all args as a single string: $"
 echo "last command exit status: $?"
