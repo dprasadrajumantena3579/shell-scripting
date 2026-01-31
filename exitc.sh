@@ -1,5 +1,5 @@
 #!/bin/bash
-userid=$1
+userid=$(id -u)
 if [ "$userid" -ne 0 ]; then
     echo "You are not a root user"
     exit 1
