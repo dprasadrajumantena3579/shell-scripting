@@ -14,3 +14,11 @@ else
     echo "Failed to install nginx."
     exit 1
 fi
+echo "Starting nginx service"
+systemctl start nginx
+if [ $? -eq 0 ]; then
+    echo "nginx service started successfully."
+else
+    echo "Failed to start nginx service."
+    exit 1
+fi
